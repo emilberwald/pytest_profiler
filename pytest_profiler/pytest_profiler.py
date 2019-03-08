@@ -17,8 +17,7 @@ class PytestProfiler:
     def pytest_sessionstart(self, session):
         pass
 
-    @staticmethod
-    def pytest_sessionfinish():
+    def pytest_sessionfinish(self):
         yappi.clear_stats()
         pass
 
